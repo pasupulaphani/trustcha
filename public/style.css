@@ -1,0 +1,125 @@
+.mdl-list .mdl-list__item:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.mdl-list a {
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+}
+
+.mdl-textfield, .mdl-button {
+    width: 100%
+}
+
+.mdl-layout__header .mdl-layout-title a {
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+    color: white
+}
+
+/* MODAL FORMS */
+.sb-modal-form .sb-footer {
+    padding: 16px 0 16px 16px;
+}
+
+.sb-modal-form .mdl-mega-footer__bottom-section,
+.sb-modal-form .mdl-mega-footer__link-list {
+    margin: 0;
+    padding: 0;
+}
+
+.sb-modal-form button {
+    min-width: 90px;
+}
+
+.sb-modal-form .mdl-layout__header-row {
+    padding: 0 20px 0;
+}
+
+.sb-modal-form .mdl-mega-footer__link-list {
+    float: right;
+}
+
+.sb-modal-form .page-content {
+    padding: 16px;
+    min-width: 400px;
+}
+
+.sb-modal-form .mdl-textfield__label {
+    top: 0;
+}
+
+.sb-modal-form input:focus, .sb-modal-form textarea:focus  {
+    outline: none;
+    border-bottom: 1px solid rgb(0,150,136);
+}
+
+/* OTHER */
+.sb-no-project {
+    text-align: center;
+    padding: 35px;
+}
+
+/* IMAGES */
+.demo-card-image.mdl-card {
+  float: left;
+  width: 256px;
+  height: 64px;
+}
+
+.demo-card-image.p1 {
+  background: url('https://www-kiva-org-3.global.ssl.fastly.net/img/w960/46a767c21db6107844f705233f73765e.jpg') center / cover;
+}
+
+.demo-card-image.p2 {
+  background: url('https://www-kiva-org-1.global.ssl.fastly.net/img/w960/a748ecc464b163fec7e2c1e728f257c4.jpg') center / cover;
+}
+
+.demo-card-image.p3 {
+  background: url('https://www-kiva-org-3.global.ssl.fastly.net/img/w960/a7f29004f7bea6e2355e2b8e1e11067d.jpg') center / cover;
+}
+
+.demo-card-image.p4 {
+  background: url('https://getmdl.io/assets/demos/image_card.jpg') center / cover;
+}
+
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 1);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sb-project-images {
+    padding: 16px;
+}
+
+.sb-project-vote button {
+    width: 98%;
+    margin: 16px;
+}
+
+.demo-card-image {
+    margin: 0 10px 20px 10px;
+}
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 276px;
+  background: url('/contact-team.png') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
