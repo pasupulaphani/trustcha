@@ -127,12 +127,13 @@
         //var addressElem = d.querySelector(".contract_address")
         //addressElem.innerHTML = "Waiting for the transaction to be confirmed.... (can take up to a minute)"
 
+        console.log('contractDeploymentCallback');
+
         if (address) {
           //addressElem.innerHTML = address
           // we save the address in the local storage so we can point to the same contract after a browser refresh
           localStorage.ftw_token_address = address
           g.contractAddress = address
-
 
           window.location.href = "/p/1";
 
