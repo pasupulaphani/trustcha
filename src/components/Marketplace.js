@@ -32,6 +32,7 @@ class Marketplace extends React.Component {
             <th>Rating</th>
             <th>Verified</th>
             <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -43,6 +44,9 @@ class Marketplace extends React.Component {
               <td>{s.leadTime}</td>
               <td>{s.rating}</td>
               <td>{s.verified}</td>
+              <td>
+                <button className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" style={{width: '120px', backgroundColor: 'grey', color: 'white'}}>Chat</button>
+              </td>
               <td>
                 <button className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" style={{width: '120px', backgroundColor: 'red', color: 'white'}}>Report</button>
               </td>
