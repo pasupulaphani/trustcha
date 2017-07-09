@@ -74,9 +74,17 @@ const Box = ({transactions = [], styleTable = "", index}) => (
         <br />
         <Images transactions={transactions} key={index} />
         <br/>
+        <br/>
+
+        <form action="#">
+          <div className="mdl-textfield mdl-js-textfield">
+            <input type="text" className="input recipient_address" name="recipient_address" id="recipient_address" />
+          </div>
+        </form>
+
         <button
-            className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"
-            onClick={() => alert('VOTED')}>
+            className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent send_tokens_btn"
+            onClick={() => global.sendTokens() }>
           Vote (Next Phase)
         </button>
         <br />
@@ -89,6 +97,7 @@ class Project extends React.Component {
       dispatch(getTransactions({
           id: this.props.match.params.id
       }))
+      global.updateBalance()
   }
 
   render () {
@@ -123,7 +132,9 @@ class Project extends React.Component {
                               <DonateForm open={(modal === 'donationModal')} handleClose={() => setModal(null)} />
                             </div>
                             <div className="mdl-cell mdl-cell--3-col" >
-                                <h3 style={styleH3Right}>{project.funds}</h3>
+                              <div className="content is-medium steps">
+                                <p>Token balance: <span className="token_balance">...</span> <span className="token_symbol"></span></p>
+                              </div>
                             </div>
                         </div>
                         { Object.keys(transactions).map((key, index) => {
