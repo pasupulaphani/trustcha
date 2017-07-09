@@ -15,6 +15,7 @@ import Chat from './components/Chat'
 import About from './components/About'
 import Contact from './components/Contact'
 import Help from './components/Help'
+import Account from './components/Account'
 import Project from './components/Project'
 import Marketplace from './components/Marketplace'
 
@@ -31,7 +32,7 @@ const App = () => (
     <Router>
       <Switch>
         <Route path="/about" component={About} />
-        <Route path="/chat" component={Chat} />
+        <Route path="/account" component={Account} />
         <Route path="/help" component={Help} />
         <Route path="/contact" component={Contact} />
         <Route path="/p/:id" component={Project} />

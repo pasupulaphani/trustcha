@@ -44,7 +44,7 @@ class Marketplace extends React.Component {
               <td>{s.rating}</td>
               <td>{s.verified}</td>
               <td>
-                <button className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" style={{width: '120px', backgroundColor: 'red'}}>Report</button>
+                <button className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" style={{width: '120px', backgroundColor: 'red', color: 'white'}}>Report</button>
               </td>
             </tr>)
         })}
